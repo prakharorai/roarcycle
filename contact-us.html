@@ -48,12 +48,67 @@
           directly. Our team will come back to you within a matter of hours to
           help you
         </p>
-          <form action="mail.php" method="post">
-          <!-- <label for="name"></label> -->
-          <input type="name" name="name" id="name" />
-          <!-- <label for="email">Email:</label> -->
-          <input type="email" id="email" name="email" />
-          <input type="submit" value="Submit" />
+
+        <form action="mail.php" method="post">
+          <div class="placehold">
+            <label for="name" class="newline">Name:</label>
+            <input type="name" name="name" id="name" placeholder="First name" />
+          </div>
+          <div class="placehold">
+            <label for="email" class="newline">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="dan@sample.com"
+            />
+          </div>
+
+          <div class="placehold">
+            <textarea
+              name="message"
+              id="message"
+              cols="100"
+              rows="5"
+              placeholder="Let us know what you think..."
+            ></textarea>
+          </div>
+
+          <div class="placehold">
+            <input
+              type="checkbox"
+              name="email-sub"
+              id="email-sub"
+              value="yes-sign-me-up"
+              checked
+            />
+            <label for="email-sub">Sign Up for Newsletter</label>
+          </div>
+
+          <div class="placehold">
+            <input
+              type="radio"
+              name="Contact"
+              id="phone"
+              value="phone"
+              checked
+            />
+            <label for="phone" class="margin-right">Phone</label>
+            <input type="radio" name="Contact" id="Email" value="Email" />
+            <label for="Email2" class="margin-right">Email</label>
+          </div>
+
+          <div class="placehold">
+            <select name="country" id="country">
+              <option value="Not-chosen">Select country</option>
+              <option value="India">India</option>
+              <option value="Sri Lanka">Sri Lanka</option>
+              <option value="Malay">Malay</option>
+              <option value="Bharat">Bharat</option>
+            </select>
+          </div>
+
+          <input type="submit" class="submitbutton" value="Submit" />
         </form>
       </div>
       <div class="cards">
